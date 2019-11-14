@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let amount = prompt("Enter amount ");
+        let a = [];
+        let total = 0;
+        for (let i = 0; i < amount; i++) {
+            a[i] = prompt("Enter a value : ");
+        }
+        document.write('Array is : ' + a + '<br>');
+        let str = a.toString();
+        //chuyển mảng a thành kiểu chuỗi
+        for (let i = 0; i < str.length; i++) {
+            if (isNaN(str[i]) === false) {
+// isNaN() sẽ kiểm tra điều kiện giá trị truyền vào có phải là một số không hợp lệ( Not-A-Number) hay không.
+// trả về True nếu tham số truyền vào là một giá trị NaN, ngược lại phương thức sẽ trả về False.
+                total++;
+            }
+        }
+        document.write('Total number of characters : ' + total);	
+    </script>
+</body>
+
+</html>

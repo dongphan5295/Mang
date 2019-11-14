@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = +prompt('Enter a number :');
+        let a = [2,4,1,23,8,11] ;
+        for(let i=0;i < a.length;i++) {
+            if (num==a[i]) {
+                document.write("number " + a[i] + "found at " + i);
+            } else {
+                document.write('This number not belong array')
+            }
+            break;
+        }
+    </script>
+</body>
+</html>

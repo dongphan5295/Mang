@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [];
+        let amount = prompt('Enter a amount : ');
+        let total = 0;
+        for (let i = 0; i < amount; i++) {
+            arr[i] = prompt('Enter word of array : ');
+        }
+        document.write('Array is : ' + arr + '<br>');
+        let str = arr.toString();
+        // chuyển mảng arr thành chuỗi
+        const isAlpha = /^[a-zA-Z]+$/;
+        //ktra 'isAlpha' chỉ chứa chữ cái
+        for (let i = 0; i < str.length; i++) {
+            if (isAlpha.test(str[i])) {
+                // kiểm tra mảng chuỗi str[i] có chứa chữ cái không
+                // !isAlpha.test(str[i]) có chứa chữ số không
+                total++;    
+            }
+        }
+        document.write('Total word of string is : ' + total);
+    </script>
+</body>
+
+</html>

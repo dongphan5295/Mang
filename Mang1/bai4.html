@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt('Enter input of array :');
+        let arr = new Array();
+
+        for (let i = 0; i < num; i++) {
+            arr[i] = Math.floor(Math.random() * 10 + 1);
+        }
+        document.write("Array is :" + arr + "<br>");
+        let max = arr[0];
+        let index = 0;
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[j] > max) {
+                max = arr[j];
+                index = j;
+            }
+        }
+        document.write("max: " + max + " at position " + index);
+
+    </script>
+</body>
+
+</html>

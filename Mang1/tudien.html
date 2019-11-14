@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>dictionary</title>
+</head>
+
+<body>
+    <h1><b></b>Dictionary Animal</h1>
+    <b>Enter the words to find: </b><input type="text" id="words"><br>
+    <button type="button" onclick="Search()">Search</button>
+    <div id="result"></div>
+    <script>
+        let dictEng = ["Cat", "Dog", "Fish", "Cow", "Pig"],
+            dictViet = ["Mèo", "Chó", "Cá", "Bò", "Heo"];
+
+        function Search() {
+            let words = document.getElementById("words").value;
+            console.log(words);
+            for (var i = 0; i < dictEng.length; i++) {
+                if (dictEng[i] == words) {
+                    document.getElementById("result").innerHTML = dictViet[i];
+                    break;
+                } else if (dictViet[i] == words) {
+                    document.getElementById("result").innerHTML = dictEng[i];
+                    break;
+                 } else {
+                    document.getElementById("result").innerHTML = "Can't found this word !!!";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

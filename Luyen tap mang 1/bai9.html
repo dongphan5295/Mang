@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = new Array();
+        let b = new Array() ;
+        let c = new Array();
+        for(let i=0;i<10;i++) {
+            a[i]=Math.floor(Math.random()*21);
+        }
+        document.write('Array of a : ' + a + '<br>');
+        for(let j=0 ; j<10; j++){
+            b[j]=Math.floor(Math.random()*21);
+        }
+        document.write('Array of b : ' + b + '<br>');
+        for(k=0;k<20;k++) {
+            c[k]=Math.floor(Math.random()*21);
+        }
+        document.write('Array of c : ' + c + '<br>');
+        c=c.concat(a);
+        c=c.concat(b);
+        document.write('Array of c after connect : ' + c + '<br>');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let smArray = new Array();
+        let number = +prompt('Enter number of array : ');
+        let sum = 0;
+        let avg;
+        for (let i = 0; i < number; i++) {
+            smArray[i] = Math.floor(Math.random() * 50);
+            sum = sum + smArray[i];
+        }
+        avg = +(sum / (smArray.length));
+        document.write('Value of array : ' + smArray + '<br>');
+        document.write('Average of array: ' + avg + '<br>');
+        let max = smArray[0];
+        for (let j =0 ;j<smArray.length;j++) {
+            if (smArray[j]>max){
+                max = smArray[j];
+            }
+        }
+        document.write('Max value of array is : '+ max);
+    </script>
+</body>
+
+</html>

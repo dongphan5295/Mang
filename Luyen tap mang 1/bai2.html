@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let stArray = new Array();
+        for (let i = 0; i < 10; i++) {
+            stArray[i] = prompt('Enter the different value :');
+        }
+        document.write('Array is :' + stArray + '<br>');
+        let max = stArray[0];
+        let index = 0;
+        for (let j = 0; j < stArray.length; j++) {
+            if (stArray[j] > max) {
+                max = stArray[j] ;
+                index = j;
+            }
+        }
+        document.write('Max value of array is : ' + max + ' at position ' + index);
+    </script>
+</body>
+
+</html>
